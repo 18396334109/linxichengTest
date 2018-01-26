@@ -1,0 +1,7 @@
+<ul class="clothes">
+    <li *ngFor="let selectclothes of clothes">
+        <!-- <a routerLink="/details/:{{selectclothes.id}}"></a> -->
+        <span class="badge" (click)="onSelect(selectclothes)">{{selectclothes.id}}</span> {{selectclothes.name}}
+    </li>
+</ul>
+<!-- <router-outlet></router-outlet> -->
